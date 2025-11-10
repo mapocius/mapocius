@@ -1,14 +1,5 @@
 <!-- Matas Augustas Pocius, AI Systems – EDIf-24/2 -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<!-- Matas Augustas Pocius, AI Systems – EDIf-24/2 -->
-<!DOCTYPE html>
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
@@ -21,10 +12,17 @@
     <h1>Matas Augustas Pocius</h1>
     <h5>Dirbtinio intelekto sistemos (EDIf-24/2)</h5>
 
-    <!-- b. Pastraipa -->
-    <p>
-        megstu triatlona
-    </p>
+    <!-- b. Pastraipa (čia ją pabrauksim 1. c punkte) -->
+    <u>
+        <p>
+            Mėgstu triatloną.
+        </p>
+    </u>
+    <!-- 
+        <u> pabraukia tekstą, bet žiniatinklyje pabraukimas dažnai siejamas su nuorodomis.
+        Todėl pabraukti visą pastraipą gali būti klaidinantis – vartotojas gali galvoti,
+        kad tai paspaudžiama nuoroda.
+    -->
 
     <!-- c. Nuoroda -->
     <p>
@@ -33,32 +31,51 @@
     </p>
 
     <!-- d. Paveikslėlis -->
-    <img src="images\svajoniu_darbas.jpg" alt="Mano svajonių darbo pozicija" width="300">
+    <img src="images/svajoniu_darbas.jpg" alt="Mano svajonių darbo pozicija" width="300">
 
     <!-- e. Sąrašai -->
     <h2>Man įdomios sritys</h2>
-    <!-- numeruotas -->
+    <!-- 1.a užduotis – numeruotas sąrašas -->
     <ol>
-        <li>Dirbtinis intelektas</li>
-        <li>Kibernetinis saugumas</li>
+        <li><strong>Dirbtinis intelektas</strong></li>
+        <li><b>Kibernetinis saugumas</b></li>
         <li>Įterptinės sistemos</li>
     </ol>
+    <!-- 
+        <strong> – semantinė žymė: reiškia „svarbus turinys“, ekrano skaitytuvai tai supranta.
+        <b> – tik vizualiai pastorina tekstą, bet nereiškia „svarbesnis“. 
+        Todėl <strong> labiau semantiškai teisinga, kai nori pabrėžti svarbą.
+    -->
 
     <h2>Ką noriu išmokti</h2>
-    <!-- nenumeruotas -->
+    <!-- 1.b užduotis – nenumeruotas sąrašas -->
     <ul>
-        <li>React arba kitas modernus front-end</li>
-        <li>API kūrimas (REST)</li>
-        <li>DevOps / Docker pagrindai</li>
+        <li><em>React / front-end kūrimas aaaa</em></li>
+        <li><i>API kūrimas aaaa (REST)</i></li>
+        <li>DevOps / Docker pagrindai aaaaa</li>
     </ul>
+    <!-- 
+        <em> – semantinis „pabrėžimas“, duoda prasmę (akcentą); skaitytuvai gali perskaityti kitokiu tonu.
+        <i> – tik pasvyra vizualiai, bet semantiškai nieko nesako.
+        Todėl tekstui, kuriam nori suteikti prasmės akcentą, geriau <em>.
+    -->
 
     <!-- f. Div konteineris -->
     <div>
+        <!-- 
+            <div> – blokinis konteineris, naudojamas sugrupuoti elementus ir vėliau
+            juos išdėlioti ar stilizuoti per CSS.
+        -->
         <p>Šitas tekstas yra div konteineryje.</p>
     </div>
 
-</body>
-</html>
-
+    <!-- 
+        <!DOCTYPE html> – nurodo, kad tai HTML5 dokumentas.
+        <html> – žymi viso HTML dokumento pradžią ir pabaigą.
+        <head> – apima informaciją, kuri nerodoma puslapyje (pvz., meta duomenys, pavadinimas).
+        <meta> – apibrėžia papildomą informaciją, pvz., koduotę ar vaizdo pločio nustatymus.
+        <title> – nurodo puslapio pavadinimą (rodomą naršyklės skirtuke).
+        <body> – dalis, kurioje talpinamas matomas turinys (tekstas, paveikslai, nuorodos ir t. t.).
+    -->
 </body>
 </html>
