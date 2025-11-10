@@ -1,0 +1,218 @@
+<!-- Matas Augustas Pocius, AI Systems – EDIf-24/2 -->
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mano CV</title>
+
+  <meta name="author" content="Jonas Petraitis">
+  <meta name="description" content="Pavyzdinis CV puslapis.">
+
+  <!-- Bootstrap + ikonėlės (iš šablono) -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- Pagrindinis šablono stilius -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Maža apsauga: jei main.css kokį foną duoda juodą, perrašom hero fono spalvą -->
+  <style>
+    /* kad tikrai matytųsi turinys */
+    #hero {
+      background: #f5f5f5;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+    #hero h2 { color: #111; }
+    #hero p { color: #333; }
+  </style>
+<style>
+  /* CV / Aprašymas sekcija */
+  #resume {
+    background-color: #fff !important;
+    color: #111 !important;
+  }
+
+  #resume h2, 
+  #resume h3, 
+  #resume h4, 
+  #resume h5 {
+    color: #000 !important;
+  }
+
+  /* Kontaktai sekcija */
+  #contact {
+    background-color: #fff !important;
+    color: #111 !important;
+  }
+
+  #contact h2,
+  #contact h3,
+  #contact h4 {
+    color: #000 !important;
+  }
+
+  /* Kad sąrašas (ul, li) ir nuorodos būtų aiškiai matomos */
+  #contact a, 
+  #contact li, 
+  #contact p, 
+  #contact span {
+    color: #111 !important;
+  }
+</style>
+
+</head>
+<body class="index-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Mano CV</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Pradžia</a></li>
+          <li><a href="#about">Apie</a></li>
+          <li><a href="#resume">Aprašymas</a></li>
+          <li><a href="#portfolio">Darbai</a></li>
+          <li><a href="#contact">Kontaktai</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- /Header -->
+
+  <main class="main">
+
+    <!-- Hero – paprastas, be data-aos -->
+    <section id="hero" class="section" style="padding-top: 90px;">
+      <div class="container text-center">
+        <h2>Sveiki, aš Jonas Petraitis</h2>
+        <p>Jaunesnysis programuotojas, kuriantis paprastas ir funkcionalias svetaines.</p>
+        <img src="assets/img/person/person-m-5.webp" alt="Profilio nuotrauka" style="max-width:180px;border-radius:9999px;margin:20px auto;display:block;">
+        <a href="#about" class="btn btn-primary mt-3">Plačiau</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" style="padding: 60px 0;">
+      <div class="container">
+        <h2 class="mb-4">Apie mane</h2>
+        <p>
+          Jonas Petraitis yra jaunas ir ambicingas programuotojas, kuriam technologijos visada buvo daugiau nei tik įrankis – tai būdas kurti, tobulinti ir palengvinti žmonių kasdienybę. Jis studijuoja informatikos inžineriją ir aktyviai gilina žinias tiek front-end, tiek back-end programavimo srityse. Jonas domisi dirbtinio intelekto sprendimais, duomenų apdorojimu bei automatizacija. Jo tikslas – kurti skaidrius, modernius ir efektyvius IT sprendimus, kurie prisideda prie realių problemų sprendimo.
+
+Be programavimo, Jonas taip pat domisi dizaino principais ir naudotojo patirties kūrimu. Jis tiki, kad gera sistema turi būti ne tik funkcionali, bet ir estetiškai patraukli. Laisvalaikiu Jonas mėgsta sportuoti, keliauti bei skaityti apie technologines naujoves.
+
+Jo požiūris į darbą paremtas nuolatiniu tobulėjimu ir atkaklumu. Kiekvienas naujas projektas – tai galimybė išmokti ką nors naujo ir pritaikyti kūrybiškumą praktikoje. Jonas siekia tapti profesionalu, kuris geba dirbti tiek savarankiškai, tiek komandoje, ir visada orientuojasi į kokybišką rezultatą.
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <ul>
+              <li><strong>Vardas:</strong> Jonas Petraitis</li>
+              <li><strong>Miestas:</strong> Kaunas</li>
+              <li><strong>Amžius:</strong> 22 m.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li><strong>El. paštas:</strong> jonas.petraitis@example.com</li>
+              <li><strong>Tel.:</strong> +370 600 12345</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section bg-light" style="padding: 60px 0;">
+      <div class="container">
+        <h2 class="mb-4">Aprašymas (CV)</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Išsilavinimas</h4>
+            <div class="mb-3">
+              <h5>KTU – Informatikos inžinerija</h5>
+              <p><em>2022 – dabar</em></p>
+              <p>Studijos: algoritmai, duomenų bazės, web technologijos.</p>
+            </div>
+            <div class="mb-3">
+              <h5>Programavimo kursai (online)</h5>
+              <p><em>2021 – 2023</em></p>
+              <p>HTML, CSS, JavaScript, Python.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>Patirtis</h4>
+            <div class="mb-3">
+              <h5>Jaunesnysis web programuotojas – „TechNova“</h5>
+              <p><em>2023 – dabar</em></p>
+              <ul>
+                <li>Front-end kūrimas su Bootstrap</li>
+                <li>Puslapių pritaikymas mobiliesiems</li>
+              </ul>
+            </div>
+            <div class="mb-3">
+              <h5>Freelance projektai</h5>
+              <p><em>2022 – 2023</em></p>
+              <p>Smulkių verslų vizitinės svetainės.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section" style="padding: 60px 0;">
+      <div class="container">
+        <h2 class="mb-4">Atlikti darbai</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="Projektas 1">
+            <h5 class="mt-2">Projektas 1</h5>
+            <p>Paprasčiausia HTML/CSS svetainė.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Projektas 2">
+            <h5 class="mt-2">Projektas 2</h5>
+            <p>Interaktyvus puslapis su JS.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Projektas 3">
+            <h5 class="mt-2">Projektas 3</h5>
+            <p>CV tipo puslapis pagal Bootstrap šabloną.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section bg-light" style="padding: 60px 0;">
+      <div class="container">
+        <h2 class="mb-4">Kontaktai</h2>
+        <ul>
+          <li><strong>El. paštas:</strong> jonas.petraitis@example.com</li>
+          <li><strong>Telefonas:</strong> +370 600 12345</li>
+          <li><strong>Adresas:</strong> Kaunas, Lietuva</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container text-center py-3">
+      <p>© 2025 Pavyzdinis CV puslapis.</p>
+    </div>
+  </footer>
+
+  <!-- JS (paliekam, bet dabar turinys jau neslepiasi net jei jie nesikrauna) -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
